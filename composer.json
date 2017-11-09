@@ -1,0 +1,11 @@
+{
+  "name": "innis-maggiore/silverstripe-content-extensions",
+  "description": "Content Extensions",
+  "type": "silverstripe-module",
+  "require": {
+    "php": "^5.3.3 || ^7.0",
+    "silverstripe/cms": ">=3.4.0",
+    "silverstripe/framework": ">=3.4.0",
+    "silverstripe/reports": ">=3.4.0"
+  }
+}
