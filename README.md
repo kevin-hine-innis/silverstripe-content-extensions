@@ -24,7 +24,7 @@ or include `"innis-maggiore/silverstripe-content-extensions": "^4.0"` in your pr
 	
 Once installed, be sure to run a `/dev/build` and flush your Silverstripe cache for the module to take effect.
 
-Use the `1.0` tag for SilverStripe 3 sites.
+Use the `1.0` tag ([ss3 branch](https://github.com/InnisMaggiore/silverstripe-content-extensions/tree/ss3)) for SilverStripe 3 sites.
 
 ## Usage
 
