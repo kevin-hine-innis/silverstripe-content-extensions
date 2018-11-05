@@ -16,7 +16,7 @@ The `H1` field should be used for semantic markup, and included in page template
 
 Run on the command line:
 
-	$ composer require innis-maggiore/silverstripe-content-extensions
+	$ composer require innis-maggiore/silverstripe-content-extensions ^4.0
 
 or include `"innis-maggiore/silverstripe-content-extensions": "^4.0"` in your project's `composer.json` and run:
 
