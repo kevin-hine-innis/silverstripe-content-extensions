@@ -16,9 +16,13 @@ class IMExtendedPage extends DataExtension
     );
 
     public function updateCMSFields(FieldList $fields) {
-        $fields->addFieldToTab("Root.Main", TextField::create("H1", "H1"), "Content");
-        $fields->addFieldToTab('Root.Main', TextField::create('PageTitle', 'Page Title'), 'MetaDescription');
-        // this isn't plugged into a template. For reference for content folks
-        $fields->addFieldToTab('Root.Main', TextareaField::create('MetaKeywords', 'Keywords'), 'MetaDescription');
+        $owner = $this->getOwner();
+
+        if (is_subclass_of($owner, SiteTree::class) && !is_a($owner, RedirectorPage::class)) {
+            $fields->addFieldToTab("Root.Main", TextField::create("H1", "H1"), "Content");
+            $fields->addFieldToTab('Root.Main', TextField::create('PageTitle', 'Page Title'), 'MetaDescription');
+            // this isn't plugged into a template. For reference for content folks
+            $fields->addFieldToTab('Root.Main', TextareaField::create('MetaKeywords', 'Keywords'), 'MetaDescription');
+        }
     }
 }
