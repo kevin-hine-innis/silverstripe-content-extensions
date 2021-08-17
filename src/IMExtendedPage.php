@@ -7,6 +7,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\CMS\Model\RedirectorPage;
 
 class IMExtendedPage extends DataExtension
 {
